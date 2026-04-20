@@ -19,7 +19,7 @@ with open('./raw/ITEM.MES', 'rb') as file:
 items = {}
 
 with open('./raw/MAIN.EXE', 'rb') as file:
-    file.seek(277192)
+    file.seek(273140)
 
     for i, description in enumerate(descriptions):
         name = file.read(17).decode('utf-8').strip('\u0000').replace('\'', '’')
